@@ -1,9 +1,12 @@
-# start project 
+# nacometa
+https://dkvsk.github.io/nacometa/
+
+## start project 
 - npm install (npm i) устнавливает зависимость 
 - npm start (npm run start) старт проекта  http://localhost:3000
 - npm run build 
 
-# fonts 
+## fonts 
 - определить шрифты на сайте
 - скачать шрифты https://fonts.google.com/
 - конфертировать шрифты с нужной жирностью (font-weight) https://transfonter.org
