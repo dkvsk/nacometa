@@ -19,12 +19,12 @@ button:focus {
 }
 
 body {
-  font: 400 16px/1.65 "HelveticaNeueCyr", sans-serif;
+  font: 400 16px/1.65 "Nunito", sans-serif;
 }
 
 a {
   display: inline-block;
-  font: 400 16px/1.65 "HelveticaNeueCyr", sans-serif;
+  font: 400 16px/1.65 "Nunito", sans-serif;
 
   &:hover {
     text-decoration: none;
@@ -93,7 +93,7 @@ input.input-error {
 /* Container */
 
 .container {
-  max-width: 1260px;
+  max-width: 1160px;
   width: 100%;
   margin: 0 auto;
   padding: 0;

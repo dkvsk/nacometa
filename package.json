@@ -7,8 +7,8 @@
     "svg2sprite": "^2.0.1"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
+    "start": "npx gulp",
+    "build": "npx gulp build",
     "gen-sprite": "svg2sprite ./src/assets/images/svg ./src/assets/images/icons-sprite.svg --stripEmptyTags --stripAttrs id -i"
   },
   "browserslist": [
@@ -21,11 +21,11 @@
     "browser-sync": "^2.26.7",
     "browsersync-ssi": "^0.2.4",
     "del": "^6.0.0",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-format-html": "^1.2.5",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
-    "gulp": "4.0.0",
     "sass": "^1.51.0"
   }
 }

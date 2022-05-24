@@ -1,9 +1,54 @@
-/* не забыть указать относительный путь ../fonts/ иначе не будет работать */
+
 @font-face {
-  font-family: 'Century';
-  src: url('../fonts/Century-Normal.woff2') format('woff2'),
-      url('../fonts/Century-Normal.woff') format('woff');
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-Bold.woff2') format('woff2'),
+      url('../fonts/Nunito-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-SemiBold.woff2') format('woff2'),
+      url('../fonts/Nunito-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Nunito-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-Regular.woff2') format('woff2'),
+      url('../fonts/Nunito-Regular.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+      url('../fonts/Manrope-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/Arial-BoldMT.woff2') format('woff2'),
+      url('../fonts/Arial-BoldMT.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
