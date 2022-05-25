@@ -146,6 +146,8 @@ input.input-error::-ms-placeholder {
   border-radius: 5px;
   border: 1px solid #03bafe;
   transition: 300ms;
+  letter-spacing: 0.2px;
+  font-weight: 700;
 }
 @media only screen and (max-width: 767px) {
   .btn {
@@ -157,10 +159,26 @@ input.input-error::-ms-placeholder {
   background-color: #0c88b7;
   border-color: #0c88b7;
 }
-
-.btn-white {
+.btn.btn-outline-white {
   background-color: transparent;
   border: 1px solid #ffffff;
+  font-weight: 600;
+}
+.btn.btn-outline-blue {
+  background-color: transparent;
+  border: 1px solid #03bafe;
+  color: #03bafe;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+@media only screen and (max-width: 991px) {
+  .title {
+    font-size: 28px;
+  }
 }
 
 /* Header wrapper */
@@ -449,4 +467,147 @@ input.input-error::-ms-placeholder {
 }
 .burger a span:after {
   top: 8px;
+}
+
+.dreams {
+  padding: 52px 0 60px;
+}
+.dreams__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+@media only screen and (max-width: 767px) {
+  .dreams__header {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dreams__header .dreams__btn {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dreams__title {
+    font-size: 21px;
+  }
+}
+.dreams__progress {
+  background: rgba(3, 186, 254, 0.2);
+  border-radius: 10px;
+  height: 5px;
+}
+.dreams__progress-bar {
+  background: linear-gradient(0deg, #03bafe, #03bafe), linear-gradient(0deg, #f7efef, #f7efef), #f7efef;
+  border-radius: 10px;
+  height: 5px;
+}
+.dreams__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  overflow: auto;
+}
+@media only screen and (max-width: 1336px) {
+  .dreams__items {
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dreams__items {
+    grid-template-columns: 240px 240px 240px;
+    margin: 0 -15px;
+    padding: 0 15px 20px;
+  }
+}
+.dreams__items::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.dreams__bottom {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .dreams__bottom {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dreams__bottom .dreams__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+.dreams__item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px rgba(50, 50, 71, 0.05);
+  border-radius: 0px 0px 20px 20px;
+}
+.dreams__image {
+  width: 100%;
+  border-radius: 20px;
+}
+.dreams__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .dreams__content {
+    padding: 10px;
+  }
+}
+.dreams__name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-family: "Manrope";
+}
+@media only screen and (max-width: 767px) {
+  .dreams__name {
+    font-size: 14px;
+  }
+}
+.dreams__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 786px) {
+  .dreams__text {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+}
+.dreams__info {
+  margin-top: auto;
+}
+.dreams__time {
+  color: #999;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .dreams__time {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+}
+.dreams__price {
+  margin-top: 10px;
+  color: #999;
+}
+.dreams__price b {
+  color: #000;
+}
+@media only screen and (max-width: 767px) {
+  .dreams__price {
+    font-size: 12px;
+    margin-top: 5px;
+  }
 }
