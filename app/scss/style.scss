@@ -33,6 +33,17 @@
     border: 1px solid #03bafe;
     color: #03bafe;
   }
+
+  &.btn-outline-orange {
+    background-color: #ffa200;
+    color: #000;
+    border: 1px solid #ffa200;
+  }
+
+  &:hover {
+    background-color: #ba7a0c;
+    border-color: #ba7a0c;
+  }
 }
 
 .title {
@@ -571,3 +582,438 @@
 }
 
 /*Support*/
+
+.support {
+  margin-bottom: 35px;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 95px;
+
+    @media only screen and (max-width: 1336px) {
+      font-size: 27px;
+      margin-bottom: 60px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin: 0 auto 30px auto;
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__heading {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      margin: 0 auto 30px auto;
+      font-size: 21px;
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1336px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+
+    @media only screen and (max-width: 1336px) {
+      margin-right: 13px;
+    }
+  }
+
+  &__guide {
+    display: none;
+    margin-top: 35px;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__subject {
+    margin-bottom: 20px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    
+    @media only screen and (max-width: 1336px) {
+      grid-gap: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      grid-template-columns: 235px 235px 235px 235px ;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__card {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px 20px 44px;
+    max-width: 235px;
+
+    span {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(0deg, #03bafe, #03bafe),
+        linear-gradient(0deg, #f7efef, #f7efef), #f7efef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  &__headline {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__copy {
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  &__statistics {
+    max-width: 411px;
+    border: 1px solid rgba(3, 186, 254, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 1336px) {
+      padding: 15px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+    margin-bottom: 15px;
+
+    @media only screen and (max-width: 1336px) {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    @media only screen and (max-width: 767px) {
+      font-size: 21px;
+    }
+  }
+
+  &__price {
+    color: #03bafe;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    @media only screen and (max-width: 1336px) {
+      font-size: 21px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__cash {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      color: #03bafe;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-family: "Manrope";
+    color: #999;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+
+    @media only screen and (max-width: 1336px) {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  &__manual {
+    background: #ebfaff;
+    border-radius: 20px;
+    padding: 20px 20px 12px;
+    max-width: 400px;
+
+    @media only screen and (max-width: 1336px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: #03bafe;
+      text-decoration: none;
+
+      @media only screen and (max-width: 1336px) {
+        font-size: 12px;
+      }
+    }
+
+    span {
+      position: relative;
+      color: #03bafe;
+      font-size: 40px;
+      font-weight: 700;
+      margin-right: 22px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(107, 203, 239, 0.2);
+      }
+    }
+  }
+
+  &__desc {
+    margin-top: 14px;
+
+    @media only screen and (max-width: 1336px) {
+      margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  &__btns {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: 1336px) {
+      flex-direction: column;
+    }
+
+    .support__btn {
+      margin-right: 11px;
+      font-size: 14px;
+      padding: 10px 10px;
+      text-align: center;
+
+      @media only screen and (max-width: 1336px) {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto 10px auto;
+      }
+
+      &--more {
+        display: block;
+
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        margin-right: auto;
+        margin-bottom: 0;
+
+        @media only screen and (max-width: 1336px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/*Feedback*/
+
+.feedback {
+  margin-top: 117px;
+  margin-bottom: 60px;
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 60px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      font-size: 21px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    margin-bottom: 39px;
+    height: 100%;
+
+    @media only screen and (max-width: 991px) {
+      font-size: 12px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    margin-right: 21px;
+
+    @media only screen and (max-width: 767px) {
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px rgba(50, 50, 71, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    height: auto;
+
+    @media only screen and (max-width: 991px) {
+      padding: 20px;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    background-color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #F9F9F9;
+
+    &::after {
+      display: none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -29px;
+  }
+
+  .swiper-button-next {
+    right: -18px;
+  }
+
+  .swiper-pagination {
+    text-align: left;
+    position: static;
+    margin-top: 60px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+}
