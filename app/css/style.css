@@ -120,6 +120,7 @@ input.input-error::-ms-placeholder {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  position: relative;
 }
 @media screen and (max-width: 1336px) {
   .container {
@@ -1059,19 +1060,22 @@ input.input-error::-ms-placeholder {
   width: 0;
   height: 0;
 }
-.feedback .swiper-button-prev, .feedback .swiper-button-next {
+.feedback .swiper-button-prev,
+.feedback .swiper-button-next {
   background-color: #fff;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   color: #fff;
-  border: 1px solid #F9F9F9;
+  border: 1px solid #f9f9f9;
 }
-.feedback .swiper-button-prev::after, .feedback .swiper-button-next::after {
+.feedback .swiper-button-prev::after,
+.feedback .swiper-button-next::after {
   display: none;
 }
 @media only screen and (max-width: 767px) {
-  .feedback .swiper-button-prev, .feedback .swiper-button-next {
+  .feedback .swiper-button-prev,
+.feedback .swiper-button-next {
     display: none;
   }
 }
@@ -1092,6 +1096,71 @@ input.input-error::-ms-placeholder {
     text-align: center;
   }
 }
-.feedback .container {
+
+/*Reviews*/
+.reviews {
+  margin-bottom: 108px;
+}
+@media only screen and (max-width: 991px) {
+  .reviews {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .reviews {
+    margin-bottom: 35px;
+  }
+}
+.reviews__item {
   position: relative;
+}
+.reviews__item iframe {
+  width: 100%;
+  height: 419px;
+  border-radius: 10px;
+  border: 0;
+}
+@media only screen and (max-width: 767px) {
+  .reviews__item iframe {
+    height: 300px;
+  }
+}
+.reviews__title {
+  font-family: "Arial";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  line-height: 1.1;
+  padding: 0 15px 20px;
+}
+@media only screen and (max-width: 767px) {
+  .reviews__title {
+    font-size: 20px;
+  }
+}
+.reviews .swiper-button-prev::after,
+.reviews .swiper-button-next::after {
+  display: none;
+}
+.reviews .swiper-button-prev {
+  left: -29px;
+}
+@media only screen and (max-width: 767px) {
+  .reviews .swiper-button-prev {
+    display: none;
+  }
+}
+.reviews .swiper-button-next {
+  right: -29px;
+}
+@media only screen and (max-width: 767px) {
+  .reviews .swiper-button-next {
+    display: none;
+  }
+}
+.reviews .swiper-button-disabled {
+  opacity: 0;
 }

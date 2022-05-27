@@ -33,11 +33,11 @@ $(function () {
     breakpoints: {
       767: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 10,
       },
       991: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
     },
 
@@ -47,8 +47,42 @@ $(function () {
     },
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".feedback__button-next",
+      prevEl: ".feedback__button-prev",
+    },
+  });
+
+  /**
+   * init reviews slider
+   */
+
+  const reviews = new Swiper(".swiper.js-reviews-slider", {
+    loop: false,
+    slidesPerView: 1.9,
+    spaceBetween: 13,
+    breakpoints: {
+      575: {
+        slidesPerView: 2.5,
+        spaceBetween: 18,
+      },
+      767: {
+        slidesPerView: 3.5,
+        spaceBetween: 18,
+      },
+      991: {
+        slidesPerView: 4.5,
+        spaceBetween: 18,
+      },
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".reviews__button-next",
+      prevEl: ".reviews__button-prev",
     },
   });
 });
