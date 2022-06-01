@@ -85,4 +85,55 @@ $(function () {
       prevEl: ".reviews__button-prev",
     },
   });
+
+  /**
+   * init opportunities slider
+   */
+
+  const opportunities = new Swiper(".js-opportunities-slide", {
+    loop: true,
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    breakpoints: {
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".opportunities__button-next",
+      prevEl: ".opportunities__button-prev",
+    },
+  });
+
+  /**
+   * about-companies
+   */
+
+  
+  $(".about-companies__top").on("click", function (e) {
+    // e.stopPropagation()
+    
+    // const $this = $(e.currentTarget)
+    // if ($(this).next().css("display") == "block") {
+    //   $(this).next().css("display", "none");
+    // } else {
+    //   $(".about-companies__text").css("display", "none");
+    //   $(this).next().css("display", "block");
+    // }
+
+    console.log($(this));
+    // $(this).next().slideToggle();
+  });
 });
+
