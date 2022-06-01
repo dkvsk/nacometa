@@ -133,7 +133,7 @@ $(function () {
     // }
 
     console.log($(this));
-    // $(this).next().slideToggle();
+    $(this).next().slideToggle();
   });
 });
 
