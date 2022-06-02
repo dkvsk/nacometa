@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./libs/select2/select2.min.css" />
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./libs/dropzone/dropzone.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -494,7 +495,7 @@
             <img class="share-dream__img" src="./images/share-1.png" alt="" />
           </div>
           <form action="/" method="POST" class="share-dream__form">
-            <div class="share-dream__item">
+            <label class="share-dream__item">
               <img
                 class="share-dream__image"
                 src="./images/share-2.svg"
@@ -502,9 +503,9 @@
               />
               <div class="share-dream__heading">
                 Перетащи сюда изображение или
-                <a href="#">загрузи с компьютера</a>
+                <span>загрузи с компьютера</span>
               </div>
-            </div>
+            </label>
             <div class="share-dream__content">
               <input type="text" placeholder="Название мечты" />
               <textarea name="description" id="" cols="30" rows="10">
@@ -751,44 +752,44 @@
     <div class="footer">
       <div class="container">
         <div class="footer__content">
-          <div class="footer__insturction">
-            <a href="#">Условия использования</a>
-            <a href="#">Политика конфиденциальности</a>
+          <div class="footer__insturctions">
+            <a class="footer__insturction" href="#">Условия использования</a>
+            <a class="footer__insturction" href="#"
+              >Политика конфиденциальности</a
+            >
           </div>
-          <a href="#" class="footer__social">
-            <img src="./images/instagram.svg" alt="" />
-          </a>   
-          <a href="#" class="footer__social">
-            <img src="./images/linkedin.svg" alt="" />
-          </a>   
-          <a href="#" class="footer__social">
-            <img src="./images/pinterest.svg" alt="" />
-          </a>   
-          <a href="#" class="footer__social">
-            <img src="./images/facebook.svg" alt="" />
-          </a>  
-          <a href="#" class="footer__social">
-            <img src="./images/twitter.svg" alt="" />
-          </a> 
-          <a href="#" class="footer__social">
-            <img src="./images/twitch.svg" alt="" />
-          </a> 
-          <a href="#" class="footer__social">
-            <img src="./images/youtube.svg" alt="" />
-          </a>
-          <div class="footer__copyrigth">
-            © 2021 Nacometa. Все права защищены
+          <div class="footer__socials">
+            <a href="#" class="footer__social">
+              <img src="./images/instagram.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="./images/linkedin.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="./images/pinterest.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="./images/facebook.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="./images/twitter.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="./images/twitch.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social">
+              <img src="./images/youtube.svg" alt="" />
+            </a>
           </div>
         </div>
+        <div class="footer__copyrigth">© 2021 Nacometa. Все права защищены</div>
       </div>
     </div>
-
-
-    <main class="main" role="main">Main</main>
 
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/select2/select2.min.js"></script>
+    <script src="./libs/dropzone/dropzone.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

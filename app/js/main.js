@@ -120,10 +120,9 @@ $(function () {
    * about-companies
    */
 
-  
   $(".about-companies__top").on("click", function (e) {
     // e.stopPropagation()
-    
+
     // const $this = $(e.currentTarget)
     // if ($(this).next().css("display") == "block") {
     //   $(this).next().css("display", "none");
@@ -132,8 +131,6 @@ $(function () {
     //   $(this).next().css("display", "block");
     // }
 
-    console.log($(this));
     $(this).next().slideToggle();
   });
 });
-
